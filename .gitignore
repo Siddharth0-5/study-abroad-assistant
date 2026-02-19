@@ -4,5 +4,4 @@ __pycache__/
 .DS_Store
 faiss_index.bin
 docs_metadata.pkl
-data/
 .env

@@ -1,0 +1,566 @@
+{
+  "entries": [
+    {
+      "id": "united_arab_emirates_student_residence_visa_(sponsored_by_institution)",
+      "country": "United Arab Emirates",
+      "region": "UAE",
+      "visa_type": "Student residence visa (sponsored by institution)",
+      "summary": "Institution acts as sponsor; acceptance letter, medical test, Emirates ID, health insurance required.",
+      "documents": [
+        "Passport (≥6 months)",
+        "Acceptance letter",
+        "Medical fitness certificate",
+        "Proof of funds",
+        "Passport photos",
+        "Sponsor documents"
+      ],
+      "language_tests": "Varies by university (IELTS/TOEFL commonly accepted)",
+      "financial": {
+        "text": "Bank statements (3-6 months) or sponsor letter; fees and insurance (see notes)",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "1) Get admission 2) University/sponsor initiates visa 3) Medical tests 4) Emirates ID issuance"
+      ],
+      "processing_time": {
+        "text": "2–6 weeks",
+        "min_days": 14,
+        "max_days": 42
+      },
+      "fees": "Visa app 3,000–3,500 AED; Renewal 2,000–2,500 AED; Medical 300–500 AED; Emirates ID 370–400 AED",
+      "work_rights": "Conditional; requires permission and sponsor/university approval",
+      "scholarships": "University-specific scholarships; Abu Dhabi Golden Visa for high achievers",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 90,
+      "notes": "Most documents arranged via university PRO; check institution pages for exact amounts and processes."
+    },
+    {
+      "id": "united_states_of_america_f-1_(academic)_/_m-1_(vocational)",
+      "country": "United States of America",
+      "region": "North America",
+      "visa_type": "F-1 (Academic) / M-1 (Vocational)",
+      "summary": "F-1 requires I-20 from SEVP-certified school, SEVIS fee, DS-160, consulate interview and proof of funds.",
+      "documents": [
+        "Passport",
+        "Form I-20",
+        "DS-160 confirmation",
+        "SEVIS I-901 fee receipt",
+        "Financial evidence",
+        "Passport photo"
+      ],
+      "language_tests": "Depends on institution (TOEFL/IELTS commonly used for admissions)",
+      "financial": {
+        "text": "Proof of funds covering tuition + living for first year; amounts vary by school",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "1) Apply & get I-20 2) Pay SEVIS fee 3) Complete DS-160 4) Schedule consulate interview"
+      ],
+      "processing_time": {
+        "text": "Varies by consulate; weeks to months",
+        "min_days": null,
+        "max_days": null
+      },
+      "fees": "Visa application fee ~USD 185; SEVIS I-901 fee USD 350 (approx)",
+      "work_rights": "On-campus (typically 20 hrs/week); OPT/CPT options post-graduation",
+      "scholarships": "EducationUSA; university scholarships (see institution pages)",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 95,
+      "notes": "Non-immigrant intent is assessed at consulate interview; SEVP/I-20 central to process."
+    },
+    {
+      "id": "canada_study_permit",
+      "country": "Canada",
+      "region": "North America",
+      "visa_type": "Study Permit",
+      "summary": "Study permit for Designated Learning Institutions; recent PAL/TAL attestation requirement (2024); proof of funds required.",
+      "documents": [
+        "Letter of Acceptance from DLI",
+        "Provincial Attestation Letter (PAL/TAL) where required",
+        "Passport",
+        "Photos",
+        "Proof of funds",
+        "Biometrics",
+        "Medical/police if applicable"
+      ],
+      "language_tests": "Varies by institution (IELTS/TOEFL commonly accepted)",
+      "financial": {
+        "text": "Proof of tuition + living (approx CAD 20,635 for single student as per report)",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "Apply online via IRCC",
+        "provide LOA & proof of funds",
+        "biometrics",
+        "wait for decision"
+      ],
+      "processing_time": {
+        "text": "8–20 weeks (varies by origin)",
+        "min_days": 56,
+        "max_days": 140
+      },
+      "fees": "Biometrics fee CAD 85; other application fees vary",
+      "work_rights": "Post-Graduation Work Permit available (PGWP) with eligibility restrictions",
+      "scholarships": "EduCanada links and university scholarships",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 92,
+      "notes": "2024 policy changes introduced PAL/TAL; verify province-specific rules with provincial portals."
+    },
+    {
+      "id": "germany_national_student_visa_/_student_applicant_visa",
+      "country": "Germany",
+      "region": "Europe",
+      "visa_type": "National Student Visa / Student Applicant Visa",
+      "summary": "Non-EU students need national visa; commonly required blocked account (Sperrkonto) showing €11,904/year (as of 2025).",
+      "documents": [
+        "Passport",
+        "Acceptance/LOA",
+        "Blocked account or formal commitment",
+        "Health insurance",
+        "Proof of accommodation"
+      ],
+      "language_tests": "TestDaF, DSH or Goethe-Zertifikat for German-taught; IELTS often for English-taught programs",
+      "financial": {
+        "text": "Blocked account €11,904 per year (as of 2025)",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "Apply to university",
+        "obtain admission/LOA",
+        "open blocked account or submit commitment",
+        "apply at consulate"
+      ],
+      "processing_time": {
+        "text": "4–12 weeks (varies by consulate)",
+        "min_days": 28,
+        "max_days": 84
+      },
+      "fees": "Visa fee ~€75 (local currency payable)",
+      "work_rights": "140 full days or 280 half days per year (~20 hours/week)",
+      "scholarships": "DAAD scholarships and institution-level funding",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 93,
+      "notes": "Blocked account requirement updated Jan 1, 2025; also Student Applicant Visa exists for preparatory stays."
+    },
+    {
+      "id": "france_vls-ts_(long-stay_student_visa_serving_as_residenc",
+      "country": "France",
+      "region": "Europe",
+      "visa_type": "VLS-TS (Long-stay student visa serving as residence permit)",
+      "summary": "VLS-TS serves as visa+residence permit; validate online after arrival; financial proof ~€615/month for first year.",
+      "documents": [
+        "Passport",
+        "VLS-TS application",
+        "Proof of accommodation (first 3 months)",
+        "Financial proof",
+        "Health insurance"
+      ],
+      "language_tests": "TCF/DELF for French-taught; English-taught may accept IELTS/TOEFL (varies)",
+      "financial": {
+        "text": "€615 per month (~€7,380 for first year) as per report",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "Apply via Campus France/EFF",
+        "get visa",
+        "validate VLS-TS online within 3 months of arrival"
+      ],
+      "processing_time": {
+        "text": "Varies (consulate processing times)",
+        "min_days": null,
+        "max_days": null
+      },
+      "fees": "Administrative fee: €50–€99 depending on country",
+      "work_rights": "Up to 964 hours/year (~20 hrs/week)",
+      "scholarships": "Campus France resources and scholarships",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 90,
+      "notes": "Campus France streamlines many application steps; validation online replaces older OFII step."
+    },
+    {
+      "id": "united_kingdom_student_visa_(points-based)",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "visa_type": "Student Visa (points-based)",
+      "summary": "Points-based Student Visa requires CAS from sponsor, English level, and financial proof; pay IHS and visa fee.",
+      "documents": [
+        "Passport",
+        "Confirmation of Acceptance for Studies (CAS)",
+        "English proof",
+        "Financial evidence",
+        "TB test if applicable"
+      ],
+      "language_tests": "CEFR B2 level typically (IELTS ~5.5–6.0 for many courses)",
+      "financial": {
+        "text": "First year's tuition + 9 months living costs (amount varies by location; London higher)",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "Receive CAS",
+        "apply online",
+        "pay IHS & visa fee",
+        "provide biometrics"
+      ],
+      "processing_time": {
+        "text": "Varies by location; consulate processing times",
+        "min_days": null,
+        "max_days": null
+      },
+      "fees": "Visa fee ~£524 (non-UK applicants) + Immigration Health Surcharge (IHS)",
+      "work_rights": "Typically 20 hours/week during term",
+      "scholarships": "UK government & university scholarships",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 92,
+      "notes": "CAS digital reference critical; IHS depends on visa length."
+    },
+    {
+      "id": "netherlands_mvv_(entry_visa)_and_vvr_(residence_permit)_/_stud",
+      "country": "Netherlands",
+      "region": "Europe",
+      "visa_type": "MVV (Entry Visa) and VVR (Residence Permit) / Student Residence Permit",
+      "summary": "Recognized Sponsor model: university applies on student's behalf; must show satisfactory study progress; work limits apply.",
+      "documents": [
+        "Passport",
+        "LOA",
+        "sponsor application by university",
+        "proof of funds",
+        "health insurance if working"
+      ],
+      "language_tests": "Varies by program; English or Dutch test depending on language of instruction",
+      "financial": {
+        "text": "Proof of sufficient funds; amounts vary by programme and IND guidance",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "University applies to IND",
+        "student receives MVV/VVR",
+        "register with municipality (BRP) on arrival"
+      ],
+      "processing_time": {
+        "text": "Varies",
+        "min_days": null,
+        "max_days": null
+      },
+      "fees": null,
+      "work_rights": "16 hrs/week during term or full-time in June-August",
+      "scholarships": "Study in NL information packages & scholarships",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 88,
+      "notes": "Universities as Recognized Sponsors handle most application steps; satisfactory progress requirement enforced."
+    },
+    {
+      "id": "australia_student_visa_(subclass_500)",
+      "country": "Australia",
+      "region": "Australia",
+      "visa_type": "Student visa (subclass 500)",
+      "summary": "Genuine Student (GS) test required; higher financial benchmarks and application fee (AUD 2,000 as of July 2025).",
+      "documents": [
+        "Confirmation of Enrolment (CoE)",
+        "OSHC health cover",
+        "passport",
+        "proof of funds",
+        "genuine student evidence"
+      ],
+      "language_tests": "IELTS/PTE/TOEFL commonly accepted (typical scores: UG 6.0, PG 6.5)",
+      "financial": {
+        "text": "Evidence of funds including AUD 29,710 living expenses (per report)",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "Apply online via Immi account",
+        "provide CoE & documents",
+        "pay visa fee",
+        "provide health cover evidence"
+      ],
+      "processing_time": {
+        "text": "Varies (weeks)",
+        "min_days": null,
+        "max_days": null
+      },
+      "fees": "Visa fee AUD 2,000 (from July 1, 2025 per report)",
+      "work_rights": "48 hours per fortnight while in session",
+      "scholarships": "Australia government and uni scholarships",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 90,
+      "notes": "Genuine Student test replaces older GTE; fee and living cost updates noted for 2025."
+    },
+    {
+      "id": "new_zealand_pathway_student_visa",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "visa_type": "Pathway Student Visa",
+      "summary": "Pathway Student Visa allows up to three consecutive programs on a single visa; living fund requirement NZD 20,000/year.",
+      "documents": [
+        "Offer of place",
+        "proof of funds",
+        "passport",
+        "health/character documents as required"
+      ],
+      "language_tests": "Varies by institution; English proficiency typically required",
+      "financial": {
+        "text": "Living fund NZD 20,000 per year (per report)",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "Apply online via Immigration NZ",
+        "provide evidence & documents",
+        "await decision"
+      ],
+      "processing_time": {
+        "text": "Varies (weeks)",
+        "min_days": null,
+        "max_days": null
+      },
+      "fees": null,
+      "work_rights": "Typically 20 hours/week during term",
+      "scholarships": "Immigration NZ & tertiary institution scholarships",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 88,
+      "notes": "Pathway visa useful for sequential study programs; living fund estimates provided in report."
+    },
+    {
+      "id": "singapore_student's_pass_(solar_system)",
+      "country": "Singapore",
+      "region": "Asia",
+      "visa_type": "Student's Pass (SOLAR system)",
+      "summary": "SOLAR system: university registers student, student completes eForm; processing often 1–2 weeks.",
+      "documents": [
+        "Passport",
+        "university registration",
+        "eForm 16",
+        "medical exam (HIV/X-ray) where required"
+      ],
+      "language_tests": "Varies by institution",
+      "financial": {
+        "text": "Processing & issuance fees (S$45–S$60 per report)",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "University registers in SOLAR",
+        "student completes eForm",
+        "await approval and issuance"
+      ],
+      "processing_time": {
+        "text": "1–2 weeks (typical)",
+        "min_days": 7,
+        "max_days": 14
+      },
+      "fees": "Processing fee S$45; Issuance fee S$60 (per report)",
+      "work_rights": "Limited; subject to MOM rules and institution",
+      "scholarships": "University scholarships and Singapore government schemes",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 85,
+      "notes": "Efficient processing via SOLAR; issuance fees listed in report."
+    },
+    {
+      "id": "japan_student_visa_(requires_certificate_of_eligibility)",
+      "country": "Japan",
+      "region": "Asia",
+      "visa_type": "Student Visa (requires Certificate of Eligibility)",
+      "summary": "Certificate of Eligibility (CoE) required; schools act as proxy to apply for CoE; financial proof ~JPY 3,000,000 for first year (per report).",
+      "documents": [
+        "Passport",
+        "CoE",
+        "Acceptance letter",
+        "Proof of funds (~JPY 3,000,000)",
+        "health/character documents"
+      ],
+      "language_tests": "Varies by program (Japanese proficiency for Japanese-taught; English tests for English-taught)",
+      "financial": {
+        "text": "Approx JPY 3,000,000 (~USD 20,000) for first year per report",
+        "normalized_usd": null
+      },
+      "application_steps": [
+        "School submits CoE application to Regional Immigration Bureau",
+        "on CoE issuance student applies for visa at embassy"
+      ],
+      "processing_time": {
+        "text": "Varies",
+        "min_days": null,
+        "max_days": null
+      },
+      "fees": null,
+      "work_rights": "Limited; permission required for part-time work",
+      "scholarships": "MEXT scholarships and university funding",
+      "source": [
+        {
+          "url": "https://www.studies-overseas.com/blogs/dubai-student-visa",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.prosperoverseas.com/default/checklistDubai",
+          "type": "secondary",
+          "crawl_date": "2026-02-12"
+        },
+        {
+          "url": "https://www.uowdubai.ac.ae/students/visas",
+          "type": "primary",
+          "crawl_date": "2026-02-12"
+        }
+      ],
+      "confidence": 85,
+      "notes": "Financial amount is an approximate figure quoted in report; confirm with embassy/university."
+    }
+  ]
+}
