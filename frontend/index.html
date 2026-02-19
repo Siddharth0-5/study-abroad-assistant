@@ -1,153 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
+<meta charset="UTF-8" />
 <title>Study Abroad Assistant</title>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin:0;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#6366f1;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg,#6366f1,#7c3aed);
+  font-family: Inter, system-ui, sans-serif;
 }
 
-.card {
-  width:700px;
-  max-width:95%;
-  background:white;
-  border-radius:16px;
-  padding:20px;
-  box-shadow:0 20px 60px rgba(0,0,0,.25);
+.app {
+  width: 760px;
+  max-width: 95%;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.25);
+  display: flex;
+  flex-direction: column;
 }
 
-h2 {
-  margin:0;
+.header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header p {
+  margin: 6px 0 0;
+  color: #666;
+  font-size: 14px;
 }
 
 .chat {
-  height:350px;
-  overflow:auto;
-  margin:15px 0;
-  padding-right:5px;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.msg {
+  margin-bottom: 14px;
+  display: flex;
 }
 
 .user {
-  text-align:right;
-  margin:10px;
+  justify-content: flex-end;
 }
 
 .bot {
-  text-align:left;
-  margin:10px;
+  justify-content: flex-start;
 }
 
 .bubble {
-  display:inline-block;
-  padding:12px 14px;
-  border-radius:12px;
-  max-width:80%;
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 14px;
+  line-height: 1.5;
+  font-size: 14.5px;
 }
 
 .user .bubble {
-  background:#6366f1;
-  color:white;
+  background: #6366f1;
+  color: white;
+  border-bottom-right-radius: 4px;
 }
 
 .bot .bubble {
-  background:#f1f5f9;
+  background: #f1f5f9;
+  color: #111;
+  border-bottom-left-radius: 4px;
 }
 
-/* Markdown polish */
-.bot .bubble ul {
-  padding-left: 20px;
-}
-
-.bot .bubble li {
-  margin-bottom: 6px;
-}
-
-.bot .bubble strong {
-  font-weight:600;
-}
-
-.bot .bubble h3 {
-  margin-top:10px;
-}
-
-.controls {
-  display:flex;
-  gap:10px;
+.footer {
+  padding: 14px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
 }
 
 input {
-  flex:1;
-  padding:12px;
-  border-radius:10px;
-  border:1px solid #ddd;
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
 }
 
 button {
-  padding:12px 16px;
-  border-radius:10px;
-  border:none;
-  background:#6366f1;
-  color:white;
-  cursor:pointer;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+.loading {
+  font-style: italic;
+  opacity: .6;
 }
 </style>
 </head>
 
 <body>
 
-<div class="card">
-<h2>🎓 Study Abroad Assistant</h2>
+<div class="app">
 
-<div id="chat" class="chat"></div>
+  <div class="header">
+    <h1>🎓 Study Abroad Visa Assistant</h1>
+    <p>Ask official visa requirements for Canada, UAE, Europe, Australia & more.</p>
+  </div>
 
-<div class="controls">
-<input id="q" placeholder="Ask about any country visa..." />
-<button onclick="ask()">Ask</button>
-</div>
+  <div id="chat" class="chat"></div>
+
+  <div class="footer">
+    <input id="q" placeholder="Ask about any country's student visa..." />
+    <button onclick="ask()">Ask</button>
+  </div>
+
 </div>
 
 <script>
-const API="http://127.0.0.1:8000"
-const chat=document.getElementById("chat")
+const API = "http://127.0.0.1:8000";
 
-function add(cls,text){
- const d=document.createElement("div")
- d.className=cls
- d.innerHTML=`<div class="bubble">${text}</div>`
- chat.appendChild(d)
- chat.scrollTop=999999
+const chat = document.getElementById("chat");
+
+function add(role, html) {
+  const row = document.createElement("div");
+  row.className = "msg " + role;
+
+  const bubble = document.createElement("div");
+  bubble.className = "bubble";
+  bubble.innerHTML = html;
+
+  row.appendChild(bubble);
+  chat.appendChild(row);
+  chat.scrollTop = chat.scrollHeight;
+
+  return row;
 }
 
-async function ask(){
- const q=document.getElementById("q").value
- if(!q) return
+async function ask() {
+  const input = document.getElementById("q");
+  const question = input.value.trim();
+  if (!question) return;
 
- add("user",q)
- document.getElementById("q").value=""
+  input.value = "";
 
- add("bot","Thinking...")
+  add("user", question);
 
- const r=await fetch(API+"/chat",{
-   method:"POST",
-   headers:{"Content-Type":"application/json"},
-   body:JSON.stringify({question:q})
- })
+  const loading = add("bot", "<span class='loading'>Thinking…</span>");
 
- const j=await r.json()
+  const res = await fetch(API + "/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ question })
+  });
 
- chat.lastChild.remove()
+  const data = await res.json();
 
- add("bot", marked.parse(j.answer))
+  loading.remove();
+
+  add("bot", marked.parse(data.answer));
 }
 </script>
 
