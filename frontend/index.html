@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Study Abroad Assistant</title>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<style>
+body {
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#6366f1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.card {
+  width:700px;
+  max-width:95%;
+  background:white;
+  border-radius:16px;
+  padding:20px;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+
+h2 {
+  margin:0;
+}
+
+.chat {
+  height:350px;
+  overflow:auto;
+  margin:15px 0;
+  padding-right:5px;
+}
+
+.user {
+  text-align:right;
+  margin:10px;
+}
+
+.bot {
+  text-align:left;
+  margin:10px;
+}
+
+.bubble {
+  display:inline-block;
+  padding:12px 14px;
+  border-radius:12px;
+  max-width:80%;
+}
+
+.user .bubble {
+  background:#6366f1;
+  color:white;
+}
+
+.bot .bubble {
+  background:#f1f5f9;
+}
+
+/* Markdown polish */
+.bot .bubble ul {
+  padding-left: 20px;
+}
+
+.bot .bubble li {
+  margin-bottom: 6px;
+}
+
+.bot .bubble strong {
+  font-weight:600;
+}
+
+.bot .bubble h3 {
+  margin-top:10px;
+}
+
+.controls {
+  display:flex;
+  gap:10px;
+}
+
+input {
+  flex:1;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+}
+
+button {
+  padding:12px 16px;
+  border-radius:10px;
+  border:none;
+  background:#6366f1;
+  color:white;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h2>🎓 Study Abroad Assistant</h2>
+
+<div id="chat" class="chat"></div>
+
+<div class="controls">
+<input id="q" placeholder="Ask about any country visa..." />
+<button onclick="ask()">Ask</button>
+</div>
+</div>
+
+<script>
+const API="http://127.0.0.1:8000"
+const chat=document.getElementById("chat")
+
+function add(cls,text){
+ const d=document.createElement("div")
+ d.className=cls
+ d.innerHTML=`<div class="bubble">${text}</div>`
+ chat.appendChild(d)
+ chat.scrollTop=999999
+}
+
+async function ask(){
+ const q=document.getElementById("q").value
+ if(!q) return
+
+ add("user",q)
+ document.getElementById("q").value=""
+
+ add("bot","Thinking...")
+
+ const r=await fetch(API+"/chat",{
+   method:"POST",
+   headers:{"Content-Type":"application/json"},
+   body:JSON.stringify({question:q})
+ })
+
+ const j=await r.json()
+
+ chat.lastChild.remove()
+
+ add("bot", marked.parse(j.answer))
+}
+</script>
+
+</body>
+</html>
